@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #034159;
+    --cor2: #038C3E;
+    --cor3: #0CF25D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: var(--cor1);
+
+}
+
+.container {
+    text-align: center;
+    background-color: var(--cor2);
+    height: 400px;
+    width: 900px;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.329);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}   
+
+.container > h1 {
+    font-size: 5em;
+}
+
+.container > p {
+    font-size: 2em;
+    padding: 20px;
+}
+
+.container > .saudacao {
+    padding-top: 30px;
+    font-size: 3em;
+    color: var(--cor3);
+
+}
+
+.container > button {
+    margin: auto;
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: var(--cor1);
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+}
+
+.container > button:hover {
+    background-color: #045f83;
+}
