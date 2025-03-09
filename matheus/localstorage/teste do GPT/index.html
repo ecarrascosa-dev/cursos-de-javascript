@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo com Progresso</title>
+</head>
+<body>
+    <h1>Jogo com Progresso</h1>
+    <p>Pontuação: <span id="score">0</span></p>
+    <p>Nível: <span id="level">1</span></p>
+    <button id="addScore">Ganhar Pontos</button>
+    <button id="nextLevel">Próximo Nível</button>
+    <button id="resetGame">Resetar</button>
+
+    <script>
+        // Recuperar progresso salvo (se existir)
+        let score = localStorage.getItem("score") ? parseInt(localStorage.getItem("score")) : 0;
+        let level = localStorage.getItem("level") ? parseInt(localStorage.getItem("level")) : 1;
+
+        document.getElementById("score").textContent = score;
+        document.getElementById("level").textContent = level;
+
+        // Atualizar pontuação
+        document.getElementById("addScore").addEventListener("click", function() {
+            score += 10;
+            localStorage.setItem("score", score);
+            document.getElementById("score").textContent = score;
+        });
+
+        // Avançar nível
+        document.getElementById("nextLevel").addEventListener("click", function() {
+            level += 1;
+            localStorage.setItem("level", level);
+            document.getElementById("level").textContent = level;
+        });
+
+        // Resetar progresso
+        document.getElementById("resetGame").addEventListener("click", function() {
+            localStorage.removeItem("score");
+            localStorage.removeItem("level");
+            score = 0;
+            level = 1;
+            document.getElementById("score").textContent = score;
+            document.getElementById("level").textContent = level;
+        });
+    </script>
+</body>
+</html>
