@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-escura: #10261E;
+    --cor-clara: #608C54;
+    --claro: #D1D9BF;
+    --alternativo1: #A0A672;
+    --alternativo2: #BF9004;
+
+}
+
+body {
+    background-color: var(--claro);
+}
+
+header {
+    position: fixed;
+    background-color: var(--cor-clara);
+    height: 1000px;
+    width: 200px;
+    color: var(--claro);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+#linha {
+    width: 100%;
+    height: 2px;
+    margin: 10px 0px 10px 0px;
+    background-color: var(--cor-escura);
+}
+
+header > #usuario {
+    text-align: center;
+}
+
+header > #usuario > #perfil {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+header > nav {
+    display: flex;
+    flex-flow: column;
+}
+
+header > nav > a {
+    color: var(--claro);
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1.2em;
+    padding-top: 30px;
+}
+
+main {
+    margin-left: 200px;
+}
+
+#playlist {
+    border: 1px solid var(--cor-escura);
+    margin: 0px 50px 0px 50px;
+    height: 900px;
+    padding: 20px;
+}
+
+#playlist #info-playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#playlist #capa-playlist {
+    height: 100px;
+    width: 100px;
+    background-color: #10261E;
+    margin-right: 20px;
+}
+
+#body-playlist {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: decimal-leading-zero;   
+    margin-top: 50px;
+}
+
+ul > li {
+    border: 1px solid var(--cor-escura);
+    width: 519px;
+    padding: 5px;
+}
+
+#adm-playlist {
+    margin-top: 50px;
+}
+
+#adm-playlist button {
+    padding: 10px;
+    font-weight: bold;
+    color: var(--claro);
+    background-color: var(--cor-clara);
+    border: 0px;
+    border-radius: 5px;
+}
+
+
+#add-musica {
+    margin: 50px auto 50px auto;
+    width: 400px;
+    height: 200px;
+    background-color: var(--cor-escura);
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-musica p {
+    color: var(--claro);
+}
+
+#add-musica div {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+#add-musica button {
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: var(--claro);
+    background-color: var(--cor-clara);
+    border: 0px;
+    border-radius: 5px;
+}
+
+#enviadoSucesso {
+    display: none;
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#mudanca {
+    display: none;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#falhaRepetida {
+    display: none;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#falha {
+    display: none;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

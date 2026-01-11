@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Funcionarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Controle de Funcionarios</h1>
+        <div>
+            <p>
+                <label for="nome">Nome do Funcionário:</label>
+                <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+                <label for="horasTrab">Horas trabalhadas:</label>
+                <input type="text" name="horasTrab" id="horasTrab" placeholder="ex: 0,2,8,9,7,10">
+            </p>
+            <p>
+                <label for="salarioBase">Salário:</label>
+                <input type="text" name="salarioBase" id="salarioBase">
+            </p>
+            <button id="gerarRelatorio">Gerar Relatório</button>
+        </div>
+        <div>
+            <pre id="resultado"></pre>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

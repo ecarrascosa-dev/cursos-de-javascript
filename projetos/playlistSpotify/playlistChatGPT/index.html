@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <header>
+        <h1>📚 Study Tracker</h1>
+        <p>Gerencie suas sessões de estudo</p>
+    </header>
+
+    <section class="form">
+        <input type="text" id="subjectInput" placeholder="Matéria (ex: JavaScript)">
+        <input type="number" id="timeInput" placeholder="Minutos estudados">
+        <button id="addBtn">Adicionar Sessão</button>
+    </section>
+
+    <section class="stats">
+        <div class="card">
+            <h3>Total de Sessões</h3>
+            <span id="totalSessions">0</span>
+        </div>
+        <div class="card">
+            <h3>Total de Minutos</h3>
+            <span id="totalMinutes">0</span>
+        </div>
+        <div class="card">
+            <h3>Matéria Atual</h3>
+            <span id="currentSubject">—</span>
+        </div>
+    </section>
+
+    <ul id="studyList"></ul>
+
+    <footer>
+        <button id="sortBtn">Ordenar por Tempo</button>
+        <button id="reverseBtn">Inverter Lista</button>
+        <button id="clearBtn">Limpar Tudo</button>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

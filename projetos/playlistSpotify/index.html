@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayList Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Spotify</h1>
+        <div id="linha"></div>
+        <div id="usuario">
+            <div id="perfil"></div>
+            <p>Eduardo Carrascosa</p>
+        </div>
+        <div id="linha"></div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Playlist</a>
+            <a href="#">Tendências</a>
+            <a href="#">Configurações</a>
+        </nav>
+        <p>Tocando agora: <span id="musicaAtual">Nenhuma Música</span></p>
+    </header>
+    <main>
+        <div id="playlist">
+            <div id="header-playlist">
+                <div id="info-playlist">
+                    <div id="capa-playlist"></div>
+                    <div>
+                        <h1>Playlist do ChatGPT</h1>
+                        <p>171.434 salvamentos • <span id="qntMusicas">0</span> músicas, cerca de <span id="tempMusicas">0</span> Minutos</p>
+                    </div>
+                </div>
+            </div>   
+            <div id="body-playlist">
+                <ul id="lista-musica">
+                </ul>
+            </div>
+            <div id="adm-playlist">
+                <button id="btn-adm">Configurações</button>
+            </div>
+            <div id="add-musica">
+                <p>
+                    <label for="nome">Título da Música:</label>
+                    <input type="text" name="nome" id="nome">
+                </p>
+                <div>
+                    <button id="enviarMusica">Enviar Música</button><button id="closeMusic">X</p>
+                </div>
+                <button id="removeLast">Remover última música</button>
+                <button id="removeFirst">Remove a primeira música</button>
+                <button id="inverterPlaylist">Inverta a Playlist</button>
+                <button id="ordemAlfabetica">colocar em ordem a Playlist</button>
+            </div>
+            <p id="enviadoSucesso">Sucesso ao enviar a musica!</p>
+            <p id="mudanca">Mudança feita!</p>
+            <p id="falhaRepetida">ERRO musica já está na sua playlist</p>
+            <p id="falha">ERRO ao enviar a música</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

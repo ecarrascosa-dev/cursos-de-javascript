@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.app {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.form button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #00c6ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.card span {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+li {
+    background: rgba(255,255,255,0.12);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background: crimson;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+footer button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background: #00c6ff;
+    font-weight: bold;
+    cursor: pointer;
+}

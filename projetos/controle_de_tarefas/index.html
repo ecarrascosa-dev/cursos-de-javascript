@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <p>🗒️Controle de Tarefas</p>
+        </header>
+        <main>
+            <p>
+                <label for="tarefa">Tarefa:</label>
+                <input type="text" name="tarefa" id="tarefa">
+            </p>
+            <div id="menu">
+                <div class="menu-control">
+                    <button id="addTarefa" class="wide">Adicionar</button>
+                    <button id="removePrimeiraTarefa">Remover primeira</button>
+                    <button id="removeUltimaTarefa" >Remover última</button>
+                    <button id="organizeAZ">Organizar (A-Z)</button>
+                    <button id="invertOrdem">Inverter ordem</button>
+                </div>
+                <div class="menu-info">
+                    <p>Total de Tarefas: <strong id="totalTarefas">0</strong></p>
+                    <p>Tarefa Atual: <strong id="tarefaAtual">Nenhuma</strong></p>
+                </div>
+            </div>
+            <div id="lista">
+                <ul id="listaDeTarefas">
+                </ul>
+            </div>
+            <div id="mensagens">
+                <p id="msg-sucesso">Sucesso!</p>
+                <p id="msg-erro">ERRO!</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
