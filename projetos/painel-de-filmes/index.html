@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🎥 Painel de Filmes</h1>
+    <div id="menu">
+        <button id="filmesLongosButton" type="button">Filmes Longos (>150)</button>
+        <button id="filmesAltosButton" type="button">Notas Altas (>8.5)</button>
+    </div>
+    <div id="infos">
+        <p>⏱️ Tempo total para assistir tudo: <strong id="tempoTotal">0</strong> minutos</p>
+        <p>⭐ Nota média do catálogo: <strong id="mediaNotas">0</strong></p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Gênero</th>
+                <th>Duração (M)</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-filmes">
+            <tr>
+                <td>Interestelar</td>
+                <td>Ficção</td>
+                <td>169</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

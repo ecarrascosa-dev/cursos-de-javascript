@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Streamflix Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <h1>🎬 Streamflix</h1>
+    <p>Painel de Controle do Catálogo</p>
+  </header>
+
+  <section class="controles">
+    <select id="filtroGenero">
+      <option value="todos">Todos os gêneros</option>
+      <option value="Ficção">Ficção</option>
+      <option value="Drama">Drama</option>
+      <option value="Ação">Ação</option>
+      <option value="Animação">Animação</option>
+      <option value="Suspense">Suspense</option>
+    </select>
+
+    <button id="btnRecomendados">⭐ Recomendados</button>
+    <button id="btnAssistidos">👁️ Assistidos</button>
+    <button id="btnReset">🔄 Resetar</button>
+  </section>
+
+  <section class="resumo">
+    <div class="card">
+      <span>Total de Filmes</span>
+      <strong id="totalFilmes">0</strong>
+    </div>
+
+    <div class="card">
+      <span>Tempo Total (min)</span>
+      <strong id="tempoTotal">0</strong>
+    </div>
+
+    <div class="card">
+      <span>Nota Média</span>
+      <strong id="notaMedia">0</strong>
+    </div>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Gênero</th>
+        <th>Duração</th>
+        <th>Nota</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaFilmes">
+      <!-- JS -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

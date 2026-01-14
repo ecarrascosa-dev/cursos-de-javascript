@@ -1,0 +1,84 @@
+@charset "UTF-8";
+:root {
+    /* Fundo */
+    --bg-main: #0D1117;          /* fundo geral */
+    --bg-card: #161B22;          /* containers / tabelas */
+    --bg-header: #1F2937;        /* cabeçalho da tabela */
+
+    /* Ações */
+    --primary: #3B82F6;          /* botões principais */
+    --secondary: #22C55E;        /* sucesso / positivo */
+    --danger: #EF4444;           /* erro / remover */
+    --warning: #FACC15;          /* alerta */
+
+    /* Texto */
+    --text-main: #E5E7EB;        /* texto principal */
+    --text-muted: #9CA3AF;       /* texto secundário */
+
+    /* Tabela */
+    --table-row: #111827;        /* linha normal */
+    --table-row-alt: #0B1220;    /* linha alternada */
+    --table-hover: #1E3A8A;      /* hover linha */
+
+    /* Bordas */
+    --border: #1F2937;
+
+    /* Destaque */
+    --highlight: #38BDF8;        /* filme em destaque / seleção */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: var(--primary);
+    padding: 10px;
+    border: none;
+    margin: 20px;
+}
+
+body {
+    background-color: var(--bg-main);
+}
+
+body > h1 {
+    color: var(--text-main);
+    margin: 30px;
+}
+
+#infos > p {
+    color: var(--text-main);
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-card);
+    color: var(--text-main);
+}
+
+thead {
+    background-color: var(--bg-header);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-row-alt);
+}
+
+tbody tr:hover {
+    background-color: var(--table-hover);
+}
+
+th {
+    color: var(--highlight);
+}

@@ -1,0 +1,102 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #e50914;
+  --accent: #22c55e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  padding: 30px;
+}
+
+.topo {
+  margin-bottom: 30px;
+}
+
+.topo h1 {
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+.controles {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+select, button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary);
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.card strong {
+  font-size: 1.8rem;
+  display: block;
+  margin-top: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+}
+
+thead {
+  background: #020617;
+}
+
+tbody tr:nth-child(even) {
+  background: #020617;
+}
+
+.status-ok {
+  color: var(--accent);
+}
+
+.status-pendente {
+  color: var(--primary);
+}

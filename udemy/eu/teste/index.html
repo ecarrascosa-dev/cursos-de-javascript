@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard de Vendas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <h1>📊 Dashboard de Vendas</h1>
+
+    <section id="stats">
+      <p>💰 Faturamento: R$ <span id="faturamento">0</span></p>
+      <p>📦 Itens vendidos: <span id="itens">0</span></p>
+      <p>🧮 Produtos: <span id="produtos">0</span></p>
+    </section>
+
+    <section id="controles">
+      <button id="btnCaros">Acima de R$500</button>
+
+      <select id="filtroCategoria">
+        <option value="todos">Todos</option>
+        <option value="Periférico">Periférico</option>
+        <option value="Tela">Tela</option>
+        <option value="Acessório">Acessório</option>
+        <option value="Computador">Computador</option>
+      </select>
+
+      <button id="btnResumo">Resumo</button>
+      <button id="btnReset">Mostrar tudo</button>
+    </section>
+
+    <table>
+      <thead>
+        <tr id="cabecalho">
+          <th>Produto</th>
+          <th>Categoria</th>
+          <th>Quantidade</th>
+          <th>Total (R$)</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaVendas">
+          
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
