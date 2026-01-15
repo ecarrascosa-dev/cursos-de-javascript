@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>💰 Painel Financeiro</h1>
+    <p>Controle mensal de despesas</p>
+  </header>
+
+  <section id="resumo">
+    <div>Total Gasto: R$ <strong id="totalGasto">0</strong></div>
+    <div>Média: R$ <strong id="mediaGasto">0</strong></div>
+    <div>Fixas: <strong id="fixas">0</strong></div>
+    <div>Variáveis: <strong id="variaveis">0</strong></div>
+  </section>
+
+  <section id="controles">
+    <button id="btnFixas">Fixas</button>
+    <button id="btnAltas">Acima de R$100</button>
+    <button id="btnLista">Lista Simples</button>
+    <button id="btnTabela">Tabela</button>
+    <button id="btnReset">Reset</button>
+  </section>
+
+  <section id="conteudo">
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>Descrição</th>
+          <th>Categoria</th>
+          <th>Valor</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaDespesas"></tbody>
+    </table>
+
+    <ul id="listaDespesas" class="hidden"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
